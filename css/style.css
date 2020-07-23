@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+    font-size: 10px;
+    --red: hsl(0, 100%, 73.7%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+*, *::before, *::after {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    z-index: 0;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: white;
+    background-color: var(--red);
+    background-image: url("../images/bg-intro-desktop.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.625 ;
+}
+
+header,
+main {
+    flex-basis: 37.5%;
+}
+
+header {
+    margin-right: 4.5rem;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5rem;
+    letter-spacing: -0.52;
+    line-height: 1.1;
+}
+
+.try-button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 6rem;
+    background-color: var(--Blue);
+    box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 0.15) ;
+    margin-bottom: 2.4rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.27;
+    line-height: 1.733;
+}
+
+em {
+    font-weight: 700;
+}

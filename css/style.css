@@ -68,3 +68,28 @@ h1 {
 em {
     font-weight: 700;
 }
+
+form {
+    background-color: white;
+    padding: 4rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 0.15);
+}
+
+input {
+    display: block;
+    border: 1px solid var(--GrayishBlue);
+    width: 100%;
+    padding: 15px 32px;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 1.4rem;
+    letter-spacing: 0.25;
+    line-height: 1.857;
+    color: hsl(249, 9.9%, 25.7%);
+}
+
+input:active {
+    border-color: var(--Blue);
+}

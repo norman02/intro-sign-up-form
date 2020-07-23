@@ -49,3 +49,22 @@ h1 {
     letter-spacing: -0.52;
     line-height: 1.1;
 }
+
+.try-button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    height: 6rem;
+    background-color: var(--Blue);
+    box-shadow: 0 8px 0 0 hsla(0, 0%, 0%, 0.15) ;
+    margin-bottom: 2.4rem;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.27;
+    line-height: 1.733;
+}
+
+em {
+    font-weight: 700;
+}

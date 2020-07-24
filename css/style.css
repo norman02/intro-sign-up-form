@@ -93,3 +93,30 @@ input {
 input:active {
     border-color: var(--Blue);
 }
+
+form button {
+    width: 100%;
+    background-color: var(--Green);
+    height: 5.6rem;
+    border-radius: 5px;
+    box-shadow: 0 -4px 0 0 hsla(0, 0%, 0%, 0.09);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 1;
+    line-height: 1.733;
+    color: white;
+    text-transform: uppercase;
+}
+
+.legal {
+    font-weight: 500;
+    font-size: 1.1rem;
+    line-height: 2.364;
+    color: hsl(246, 25.2%, 77.5%);
+    padding-top: 0.8rem;
+}
+
+.legal a {
+    text-decoration: none;
+    color: hsl(0, 100%, 73.7%);
+}

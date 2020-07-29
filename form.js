@@ -7,6 +7,22 @@ const validate = ()=> {
     let email = document.getElementById('email').value
     let password = document.getElementById('password').value
 
+    if (firstName === '') {
+        valid =false
+    } 
+
+    if (lastName === '') {
+        valid = false
+    }
+
+    if (email === '') {
+        valid = false
+    }
+
+    if (password === '') {
+        valid = false
+    }
+
 
     if (valid) {
         alert(`${firstName} ${lastName} ${email} ${password}`)
@@ -14,6 +30,8 @@ const validate = ()=> {
         alert('please complete the required fields')
     }
 }
+
+
 
 
 document.getElementById("submit").addEventListener("click", validate)

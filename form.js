@@ -1,12 +1,18 @@
 
 
 const validate = ()=> {
-    const firstName = document.getElementById('first_name').value
-    const lastName = document.getElementById('last_name').value
-    const email = document.getElementById('email').value
-    const password = document.getElementById('password').value
+    let valid = true
+    let firstName = document.getElementById('first_name').value
+    let lastName = document.getElementById('last_name').value
+    let email = document.getElementById('email').value
+    let password = document.getElementById('password').value
 
-    console.log('hello' + ' ' +  firstName + ' ' + lastName + ' at ' + email + ' I hope you realize that ' + password + ' is a stupid password')
+
+    if (valid) {
+        alert(`${firstName} ${lastName} ${email} ${password}`)
+    } else {
+        alert('please complete the required fields')
+    }
 }
 
 

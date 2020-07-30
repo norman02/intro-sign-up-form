@@ -7,9 +7,9 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/style.css">
-
+  
   <title>Frontend Mentor | Intro component with sign up form</title>
-
+  
 
 </head>
 
@@ -31,25 +31,59 @@
   <main>
 
     <button class="try-button">
-      <em>Try it free 7</em>  days then $20/mo. thereafter
-      
+      <em>Try it free 7</em> days then $20/mo. thereafter
+
     </button>
 
     <form action="#">
-      <input type="text" placeholder="First Name ">
-      <input type="text" placeholder="Last Name ">
-      <input type="email" placeholder="Email Address ">
-      <input type="text" placeholder="Password">
 
-      <button>Claim your free trial </button>
+      <div class="input-container">
+        <img id="first-error-icon" class="error-icon" src="./images/icon-error.svg" alt="error">
+
+        <input type="text" id="first_name" name="first_name" placeholder="First Name">
+
+        <p id="first_error" class="error-message">First Name cannot be empty</p>
+
+      </div>
+
+      <div class="input-container">
+        <img id="second_icon"  class="error-icon" src="./images/icon-error.svg" alt="error">
+
+        <input id="last_name_input" type="text" id="last_name" name="last_name" placeholder="Last Name ">
+        <p id="second_error" class="error-message">Last Name cannot be empty</p>
+
+      </div>
+
+      <div class="input-container">
+
+        <img id="third_icon" class="error-icon" src="./images/icon-error.svg" alt="error">
+
+        <input id="email_input" type="email" id="email" name="email" placeholder="Email Address ">
+
+        <p id="third_error" class="error-message">Looks like this is not an email</p>
+
+      </div>
+
+      <div class="input-container">
+
+        <img id="fourth_icon" class="error-icon" src="./images/icon-error.svg" alt="error">
+
+        <input id="password_input" type="password" id="password" name="password" placeholder="Password">
+        <p id="fourth_error" class="error-message">Password cannot be empty</p>
+
+      </div>
+
+      <button id="submit">Claim your free trial </button>
 
       <p class="legal">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a> </p>
 
-    </form>
+      
 
+    </form>
+    
   </main>
 
 
 </body>
-
+<script src="./javascript/form.js"></script>
 </html>

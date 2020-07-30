@@ -24,11 +24,11 @@ const validate = ()=> {
     }
 
 
-    if (valid) {
-        alert(`${firstName} ${lastName} ${email} ${password}`)
-    } else {
-        alert('please complete the required fields')
-    }
+    // if (valid) {
+    //     alert(`${firstName} ${lastName} ${email} ${password}`)
+    // } else {
+    //     alert('please complete the required fields')
+    // }
 }
 
 

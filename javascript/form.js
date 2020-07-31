@@ -1,7 +1,6 @@
 
 
 const validate = () => {
-    let valid = true
     // get elements
     let firstIcon = document.getElementById('first-error-icon')
     let firstNameInput = document.getElementById('first_name')
@@ -19,7 +18,7 @@ const validate = () => {
     let passwordInput = document.getElementById('password_input')
     let fourthError = document.getElementById('second_error')
 
-    
+
 
     // values of inputs 
     let firstName = firstNameInput.value
@@ -33,9 +32,8 @@ const validate = () => {
         firstIcon.style.display = 'inline'
         firstNameInput.style.border = '1.5px solid red'
         firstError.style.display = 'inline'
-        firstNameInput.placeholder= ''
+        firstNameInput.placeholder = ''
     } else {
-        valid = false
         firstIcon.style.display = 'none'
         firstNameInput.style.border = '1.5px solid green'
         firstError.style.display = 'none'
@@ -45,11 +43,10 @@ const validate = () => {
         secondIcon.style.display = 'inline'
         lastNameInput.style.border = '1.5px solid red'
         secondError.style.display = 'inline'
-        lastNameInput.placeholder= ''
+        lastNameInput.placeholder = ''
     } else {
-        valid = false
         secondIcon.style.display = 'none'
-        secondNameInput.style.border = '1.5px solid green'
+        lastNameInput.style.border = '1.5px solid green'
         secondError.style.display = 'none'
     }
 
@@ -57,9 +54,8 @@ const validate = () => {
         thirdIcon.style.display = 'inline'
         emailInput.style.border = '1.5px solid red'
         thirdError.style.display = 'inline'
-        emailInput.placeholder= ''
+        emailInput.placeholder = ''
     } else {
-        valid = false
         thirdIcon.style.display = 'none'
         emailInput.style.border = '1.5px solid green'
         thirdError.style.display = 'none'
@@ -69,9 +65,8 @@ const validate = () => {
         fourthIcon.style.display = 'inline'
         passwordInput.style.border = '1.5px solid red'
         fourthError.style.display = 'inline'
-        passwordInput.placeholder= ''
+        passwordInput.placeholder = ''
     } else {
-        valid = false
         fourthIcon.style.display = 'none'
         passwordInput.style.border = '1.5px solid green'
         fourthError.style.display = 'none'
@@ -79,11 +74,12 @@ const validate = () => {
 
 }
 
-document.getElementById("submit").addEventListener("click", ()=> {
-  validate()
+document.getElementById("submit").addEventListener("click", (e) => {
+    e.preventDefault()
+    validate()
 })
 
 
 
-    
+
 

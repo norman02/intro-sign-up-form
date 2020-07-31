@@ -1,7 +1,6 @@
 
 
 const validate = () => {
-    let valid = true
     // get elements
     let firstIcon = document.getElementById('first-error-icon')
     let firstNameInput = document.getElementById('first_name')
@@ -35,7 +34,6 @@ const validate = () => {
         firstError.style.display = 'inline'
         firstNameInput.placeholder = ''
     } else {
-        valid = false
         firstIcon.style.display = 'none'
         firstNameInput.style.border = '1.5px solid green'
         firstError.style.display = 'none'
@@ -47,9 +45,8 @@ const validate = () => {
         secondError.style.display = 'inline'
         lastNameInput.placeholder = ''
     } else {
-        valid = false
         secondIcon.style.display = 'none'
-        secondNameInput.style.border = '1.5px solid green'
+        lastNameInput.style.border = '1.5px solid green'
         secondError.style.display = 'none'
     }
 
@@ -59,7 +56,6 @@ const validate = () => {
         thirdError.style.display = 'inline'
         emailInput.placeholder = ''
     } else {
-        valid = false
         thirdIcon.style.display = 'none'
         emailInput.style.border = '1.5px solid green'
         thirdError.style.display = 'none'
@@ -71,7 +67,6 @@ const validate = () => {
         fourthError.style.display = 'inline'
         passwordInput.placeholder = ''
     } else {
-        valid = false
         fourthIcon.style.display = 'none'
         passwordInput.style.border = '1.5px solid green'
         fourthError.style.display = 'none'
